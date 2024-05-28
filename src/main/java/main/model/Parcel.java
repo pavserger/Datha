@@ -1,8 +1,12 @@
 package main.model;
 
-import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+
 @Entity
+@NoArgsConstructor
 @Table(name = "`parcel`")
 @Data
 
@@ -13,6 +17,6 @@ public class Parcel
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    private String numCadastr;
+    private String numcadastr;
 
 }
